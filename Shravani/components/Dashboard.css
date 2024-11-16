@@ -1,0 +1,125 @@
+/* Dashboard CSS */
+.dashboard-content {
+    padding: 20px;
+    flex: 1;
+    position: relative;
+    background-image: url('background.png');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    min-height: 100%; /* Ensure it takes the full height */
+    width: 100%;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Cards Container with Increased Gap */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px; /* Increased gap for more space between cards */
+    margin-top: 20px;
+  }
+  
+  /* Individual Card with Blurred Background */
+  .card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Darker border */
+    border-radius: 8px;
+    padding: 80px;
+    gap: 20px 30px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Apply blur to the card's background */
+    -webkit-backdrop-filter: blur(8px); /* For Safari support */
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  /* Icon Styling */
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(124, 48, 139);
+  }
+  
+  /* Card Text */
+  .card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Bar Graph for App Usage */
+  .bar-graph {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px; /* Increased height for the bar graph */
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15); /* Subtle background for the graph */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual Bars with Dark Border */
+  .bar {
+    width: 15%;
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient for a modern look */
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 12px;
+    border-radius: 6px 6px 0 0;
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Darker border for each bar */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Text inside Bars */
+  .bar p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Hover Effect for Bars */
+  .bar:hover {
+    transform: scale(1.1); /* Slightly enlarges bar on hover */
+  }
+  
+  /* Additional Styling for Responsiveness */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .bar-graph {
+      padding: 5px;
+      height: 150px; /* Adjusted height for smaller screens */
+    }
+  
+    .bar {
+      width: 20%;
+    }
+  
+    .bar p {
+      font-size: 10px;
+    }
+  }
+  

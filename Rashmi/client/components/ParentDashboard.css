@@ -1,0 +1,165 @@
+/* Main Dashboard Container */
+.parent-dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #c593c5;
+  min-height: 100vh;
+  background-image: url('C:/Users/Dell/OneDrive/Music/LOCKNEST/backgroundpurple.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Layout Adjustments */
+.dashboard-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add Child Card */
+.add-child-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 220px;
+  height: 160px;
+  background-color: #f394f3;
+  border: 2px dashed #FF854D;
+  color: #e757e0;
+  cursor: pointer;
+  margin: 30px auto;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-child-card:hover {
+  background-color: #FF854D;
+  color: white;
+}
+
+.add-child-icon {
+  font-size: 40px;
+}
+
+.add-child-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #4a806e;
+}
+
+/* Dashboard Card and Chart Styling */
+.dashboard__stats, .dashboard__charts {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard__card, .dashboard__chart {
+  background-color: #ecb6e1;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.dashboard__card:hover, .dashboard__chart:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #FFF;
+  padding: 25px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Option Buttons Styling */
+.option-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option-buttons button {
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #FF854D;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.option-buttons button:hover {
+  background-color: #3F96FC;
+}
+
+/* Input Section Styling */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Connect Button Styling */
+.connect-button {
+  padding: 12px;
+  background-color: #3F96FC;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+  background-color: #5FA9FF;
+}
+
+/* Success Message Styling */
+.success-message {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+  

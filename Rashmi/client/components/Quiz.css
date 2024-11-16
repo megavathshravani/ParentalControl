@@ -1,0 +1,61 @@
+.quiz-container {
+    background-color: #f0e6ff;
+    color: #4b0082;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-image: url('C:\Users\Dell\OneDrive\Music\LOCKNEST\backgroundpurple.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .subject-selection,
+  .question-section {
+    margin: 10px 0;
+  }
+  
+  .subject-selection label,
+  input,
+  select,
+  button {
+    color: #4b0082;
+  }
+  
+  select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #9932cc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #9932cc;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8a2be2;
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #9932cc;
+    border-radius: 4px;
+  }
+  
+  input::placeholder {
+    color: #9932cc;
+  }
+  

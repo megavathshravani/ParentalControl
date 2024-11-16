@@ -1,0 +1,93 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e2d; /* Deep, luxurious dark blue */
+  background-image: url('C:\Users\Dell\OneDrive\Music\LOCKNEST\backgroundpurple.jpeg'); /* Relative path to the image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  filter: blur(0px); /* Adjust the pixel value as needed */
+
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #e0c097; /* Soft gold */
+  padding: 2rem;
+  min-height: 100vh;
+  
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+  
+  .dashboard-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 3rem;
+    color: #35163d;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Move it to the top right */
+    padding: 0.2rem 0.4rem; /* Small padding for a compact button */
+    background-color: #875899; /* Soft metallic grey */
+    color: #faf4bd;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Allows button to size based on content */
+    min-width: 250px; /* Set minimum width if needed */
+    max-width: 500px; /* Prevents button from getting too wide */
+}
+
+  .logout-button:hover {
+    background-color: #3f0566; /* Lighter grey */
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 220px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8708c2; /* Dark slate blue */
+    border: 2px solid #25532b;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-logo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 3px solid #e0c097;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #e0c097;
+    font-weight: bold;
+  }
+  
+  

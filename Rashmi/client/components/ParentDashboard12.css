@@ -1,0 +1,197 @@
+
+.parent-dashboard{
+background-color: teal;
+}
+.dashboard-layout {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    grid-row: 1 / span 2;
+    grid-column: 1 / 2;
+    background-color: #1b3b5f;
+    color: #e6efff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    animation: slideInLeft 0.6s ease-in-out;
+}
+
+/* Top Navigation Bar Styling */
+.topbar {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: #2a4a6e;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeInDown 0.6s ease-in-out;
+    background-color: grey;
+}
+
+/* Main Dashboard Content Area */
+.dashboard-content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Light Mode Styling */
+.dashboard-content.light {
+    background-color: #f0f8ff;
+    color: #1b3b5f;
+}
+
+/* Dark Mode Styling */
+.dashboard-content.dark {
+    background-color: #1b3b5f;
+    color: #e6efff;
+}
+
+/* Dashboard Stats Grid */
+.dashboard__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Card Styling with Scale Effect */
+.dashboard__card {
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+.dashboard__card:hover {
+    transform: scale(1.05); /* Scale up effect */
+    background-color: #c0d8ff;
+}
+
+.dashboard-content.light .dashboard__card {
+    background-color: #e6efff;
+}
+
+.dashboard-content.dark .dashboard__card {
+    background-color: #6786a7;
+    color: #e6efff;
+}
+
+/* Placeholder Styling */
+.stat-placeholder {
+    font-size: 0.9rem;
+    color: #1b3b5f;
+    padding: 40px 0;
+    background-color: #c0d8ff;
+    border-radius: 6px;
+}
+
+/* Chart Styling with Hover Animation */
+.dashboard__charts {
+    display: flex;
+    gap: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.dashboard__chart {
+    flex: 1;
+    padding: 20px;
+    background-color: #e6efff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+.dashboard-content.light .dashboard__chart {
+    background-color: #e6efff;
+}
+
+.dashboard-content.dark .dashboard__chart {
+    background-color: #2a4a6e;
+    color: #e6efff;
+}
+
+.dashboard__chart:hover {
+    background-color: #c0d8ff;
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Chart Placeholder */
+.chart-placeholder {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 60px 0;
+    background-color: #c0d8ff;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ScreenTimeManager Specific Styling */
+.screen-time-info {
+    font-size: 0.9rem;
+    color: #1b3b5f;
+    padding: 10px;
+    background-color: #e9f0ff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Links Styling */
+.link {
+    color: #1b6dcf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #123a60;
+    text-decoration: underline;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}

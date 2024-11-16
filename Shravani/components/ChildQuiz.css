@@ -1,0 +1,78 @@
+/* General styling for the quiz container */
+.child-quiz-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Full width Navigation bar with child name and subjects */
+  .child-quiz-navbar {
+    width: 100%;  /* Make navbar span the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .child-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .subjects {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .subject-button {
+    background-color: #ffffff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subject-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .subject-button:active {
+    background-color: #ddd;
+  }
+  
+  /* Subject details and the Take Test button */
+  .subject-details {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .take-test-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .take-test-button:hover {
+    background-color: #218838;
+  }
+  
+  .take-test-button:active {
+    background-color: #1e7e34;
+  }
+  

@@ -1,0 +1,160 @@
+/* ActivityList.css */
+
+/* Basic styles for Activity List */
+.body{
+    background-image: url('background.png');
+}
+.activityList {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7f7f7;
+  }
+  
+  .mainHeading h1, .subHeading h2 {
+    text-align: center;
+  }
+  
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .inputContainer input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .inputContainer button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filterOptions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filterOptions button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filterOptions button.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .todos {
+    margin-top: 20px;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .todo.completed p {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  .todo .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo .left input {
+    margin-right: 15px;
+  }
+  
+  .deleteButton {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: red;
+  }
+  
+  /* The congratulations message */
+  .congratulations-message {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2ecc71;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: popUpAnimation 1.5s ease forwards;
+  }
+  
+  /* Show animation when task is completed */
+  .show-congratulations {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Animation for the "pop-up" effect */
+  @keyframes popUpAnimation {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Confetti fall animation */
+  @keyframes confettiFall {
+    0% {
+      transform: translateY(-1000px);
+    }
+    100% {
+      transform: translateY(1000px);
+    }
+  }
+  
+  /* The confetti styling */
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    animation: confettiFall 2s ease-in-out infinite;
+  }
+  
+  .confetti:nth-child(odd) {
+    background-color: #f39c12;
+  }
+  
+  .confetti:nth-child(even) {
+    background-color: #3498db;
+  }
+  

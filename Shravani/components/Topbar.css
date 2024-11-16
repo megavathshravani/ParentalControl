@@ -1,0 +1,48 @@
+/* src/components/Topbar.css */
+
+.topbar {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.topbar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(124, 48, 139); /* Customize title color */
+}
+
+.topbar button {
+  padding: 16px 32px;
+  background-color: #6200ea; /* Customize button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0; /* Start invisible for animation */
+  transform: translateX(-20px); /* Start position */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  animation: slideIn 0.8s forwards; /* Trigger animation */
+}
+
+.topbar button:hover {
+  background-color: #3700b3; /* Darken color on hover */
+}
+
+/* Slide in animation */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

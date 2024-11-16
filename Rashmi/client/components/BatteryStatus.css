@@ -1,0 +1,12 @@
+.battery-status {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .battery-icon {
+    margin-right: 8px;
+    font-size: 2rem;
+  }
+  

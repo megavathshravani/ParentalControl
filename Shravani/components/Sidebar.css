@@ -1,0 +1,25 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    background-color:rgb(149, 68, 167);
+    color: white;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background-color: #575757;
+  }
+  

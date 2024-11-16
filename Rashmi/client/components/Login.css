@@ -1,0 +1,99 @@
+/* Background setup */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://example.com/background-image.jpg') no-repeat center center/cover; /* Replace with your own image URL */
+    background-color: #4A90E2; /* fallback background color */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+    color: #e0c097; /* Soft gold */
+  padding: 2rem;
+  min-height: 100vh;
+  
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Title and form styling */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .login-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    display: block;
+    margin-top: 1rem;
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Message styling */
+  .message {
+    margin-top: 1rem;
+    color: #e74c3c;
+  }
+  
